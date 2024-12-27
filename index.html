@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Party Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>New Year Party Registration Form</h1>
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="food">Select Food Preference:</label>
+        <select id="food" name="food" required>
+            <option value="fish">Fish</option>
+            <option value="egg">Egg</option>
+            <option value="chicken">Chicken</option>
+            <option value="mutton">Mutton</option>
+            <option value="biryani">Biryani</option>
+            <option value="vegetarian">Vegetarian</option>
+        </select>
+
+        <label for="amount">Select Amount:</label>
+        <select id="amount" name="amount" required>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+        </select>
+
+        <label for="spot">Select Picnic Spot:</label>
+        <select id="spot" name="spot" required>
+            <option value="patratu_valley">Patratu Valley</option>
+            <option value="rajgir">Rajgir</option>
+            <option value="kramchat_dam">Kramchat Dam</option>
+            <option value="manali">Manali</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
